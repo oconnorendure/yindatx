@@ -1,0 +1,123 @@
+<%layout("/common/_layout.html"){%>
+
+        <div class="insban b07"></div>
+        <!-- sub start-->
+        <div class="insub">
+            <div class="ins_left">
+                <div class="insli">
+                    <h1><span>在线订单</span>
+                        <p>online order</p>
+                    </h1>
+                    <ul>
+                        <li><a href="order">在线订单</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inside_right">
+                <div class="ins_Rtit">
+                    <p class="inside_Aus">在线订单</p>
+                    <p class="in_location">当前位置：<a href="index">首页</a><span>&gt;</span>在线订单</p>
+                </div>
+                <div class="inside_Rcon">
+                    <h1 class="ordtit"><font color="#CC0000"></font>公司彩铃办理快速通道 </h1>
+                    <table class="orderTab">
+                        <tr>
+                            <th style="text-align: right">客户名称： </th>
+                            <td>
+                                <input name="a1" type="text" id="kfmc" tname="kfmc" class="isTxt" size="28" style="width: 145px;" />
+                                * </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right">联&nbsp;系&nbsp;人： </th>
+                            <td>
+                                <input name="a2" type="text" id="lxr" tname="lxr" class="isTxt" size="12" />
+                                * </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right">E-mail： </th>
+                            <td>
+                                <input name="a3" type="text" id="email" tname="email" class="isTxt" /></td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right">QQ&nbsp;号&nbsp;码： </th>
+                            <td>
+                                <input name="a4" type="text" id="QQ" tname="QQ" class="isTxt" />
+                                * </td>
+                        </tr>
+                        <tr>
+                            <th style="height: 27px; text-align: right;">公司地址： </th>
+                            <td style="height: 27px;">
+                                <input name="a5" type="text" id="gsdz" tname="gsdz" class="isTxt" /></td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right">联系电话： </th>
+                            <td>移动电话：
+                                <input name="a6" type="text" tname="lxdf" id="lxdf" class="isTxt" />
+                                * </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right">录音类型： </th>
+                            <td>
+                                <input id="sound_type" type="radio" name="a7" value="企业彩铃" checked="checked" />
+                                <label for="_ctl0_content_type1">企业彩铃</label>
+                                <input id="Radio1" type="radio" name="a7" value="广告配音" />
+                                <label for="_ctl0_content_type2">广告配音</label></td>
+                        </tr>
+                        <tr>
+                            <th style="height: 28px; text-align: right;">播音编号： </th>
+                            <td style="height: 28px">
+                                <input name="a8" type="text" id="bynum" tname="bynum" class="isTxt" />
+                                <span>查看<a href="Case3.Aspx" target="_blank" style="color: #003399"><font style="color: #c33;">播音编号</font></a></span></td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right">背景音乐： </th>
+                            <td>
+                                <input name="a9" type="text" id="bjyy" tname="bjyy" class="isTxt" />
+                                <span>查看<a href="Bgmusic.aspx"
+                                    target="_blank" style="color: #003399"><font style="color: #c33;">背景音乐</font></a></span></td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right">开通电话： </th>
+                            <td>
+                                <input type="checkbox" name="a10" value="电信座机" />
+                                电信座机
+                                <input type="checkbox" name="a10" value="电信手机" />
+                                电信手机
+                                <input type="checkbox" name="a10" value="联通座机" />
+                                联通座机
+                                <input type="checkbox" name="a10" value="联通手机" />
+                                联通手机
+                                <input type="checkbox" name="a10" value="移动手机" />
+                                移动手机 </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right">配音内容： </th>
+                            <td>
+                                <textarea name="a11" id="content" tname="content" class="isTxt" style="height: 140px; width: 514px;"></textarea>
+                                <br />
+                                企业彩铃广告词可参考书写（查看<a href="dubbing" target="_blank"><font style="color: #c33;">配音文案</font></a>） </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right">其他要求： </th>
+                            <td>
+                                <textarea name="a12" id="qt" tname="qt" class="isTxt" style="height: 90px; width: 516px;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>
+                                <p>注：在您提交订单前，请您仔细检查填写是否有误，以免重复提交订单。订单提交后本公司客服代表会及时与您联系确认订单，并请您将录音制作费用的全款或全款的30%汇入本站账户。 </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>&nbsp; </th>
+                            <td>
+                                <input type="submit" name="Button1" value="提交" id="Button1" style="border-style:None;width:80px;" />
+                                <input type="reset" value="重置" name="reset" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- sub end-->
+
+<%}%>

@@ -1,0 +1,114 @@
+/* CSS Document */
+/*------------------------------
+Base Style Sheet For All Web Pages
+--------------------------------*/
+/*--------global set--------*/
+body{
+font-size:12px;
+font-family:微软雅黑;
+line-height:22px;
+color:#666666;
+background:#fff;
+}
+
+html,div,a,span,code,form,img,ul,ol,li,dl,dt,dd,pre,blockquote,fieldset{ margin:0; padding:0; border:none;}
+body,ul,li,p,h1,h2,h3,h4,h5,h6,input,form,hr{ padding:0; margin:0;}
+table,tr,th,td{ margin:0; padding:0;}
+p{ padding:0; border:none;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0; border:none;}
+select,input,textarea{  color:#000;}
+/*--------alignment--------*/
+.fl{ float:left;}
+.fr{ float:right;}
+.cl{ clear:both;}
+.tl{ text-align:left;}
+.tr{ text-align:right;}
+.tc{ text-align:center;}
+/*--------link--------*/
+a{ color:#818181; text-decoration:none;}
+a:hover{ color:#000; text-decoration:underline;}
+/*--------others--------*/
+.ofh{ overflow:hidden;}
+.ti{ text-indent:24px;}
+.clearBoth,.clear{
+	clear:both;
+	margin:0;
+	padding:0;
+	border:none;
+	height:0;
+	line-height:0;
+	font-size:0;
+}
+.lh_24{ line-height:24px;}
+.lh_22{ line-height:22px;}
+
+
+.cRed{ color:red;}
+/**/
+
+ul, li {margin:0; padding:0; list-style:none;}
+img {border:0;}
+.clear {height:0; overflow:hidden; clear:both; line-height:0; height:0; font-size:0;}
+
+
+
+
+.pop{
+	position:absolute;
+}
+.popCont{
+	position:relative;
+	width:470px;
+	height:341px;
+}
+.popBg{
+	display:block;
+	background:url(../img/popBg.png) no-repeat;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageloader(src="../img/popBg.png",sizingMethod="images");
+	width:470px;
+	height:341px;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:0;
+}
+.close{
+	display:block;
+	background:url(../images/close.png) no-repeat;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageloader(src="default/images/close.png",sizingMethod="images");
+	width:24px;
+	height:24px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	cursor:pointer;
+	z-index:10;
+}
+.popInfo{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:url(../img/popCbg.gif) no-repeat;
+	width:370px;
+	height:201px;
+	z-index:10;
+	padding:80px 30px 0 30px;
+	line-height:24px;
+}
+.popInfo ul{
+	height:162px;
+	overflow:hidden;
+}
+
+.setDZ{
+	display:block;
+	position:absolute;
+	background:url(../img/dzBtn.gif) no-repeat;
+	width:81px;
+	height:40px;
+	z-index:100;
+	bottom:120px;
+	right:80px;
+}
