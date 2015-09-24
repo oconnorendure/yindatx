@@ -64,11 +64,7 @@
 		    </exclusion>
 		</exclusions>
 	</dependency>
-	<dependency>
-    	<groupId>org.freemarker</groupId>
-    	<artifactId>freemarker</artifactId>
-    	<version>2.3.20</version>
-    </dependency>
+	
     <dependency>
     	<groupId>log4j</groupId>
     	<artifactId>log4j</artifactId>
@@ -93,6 +89,11 @@
 		<groupId>com.ibeetl</groupId>
 		<artifactId>beetl</artifactId>
 		<version>2.2.5</version>
+	</dependency>
+	<dependency>
+	<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.18</version>
 	</dependency>
   </dependencies>
 </project>

@@ -2,6 +2,7 @@ package cn.yindatx.common;
 
 import org.beetl.ext.jfinal.BeetlRenderFactory;
 
+import cn.yindatx.bo.Music;
 import cn.yindatx.controller.AboutController;
 import cn.yindatx.controller.AnswerController;
 import cn.yindatx.controller.BgmusicController;
@@ -10,6 +11,8 @@ import cn.yindatx.controller.ContactController;
 import cn.yindatx.controller.DubbingController;
 import cn.yindatx.controller.IndexController;
 import cn.yindatx.controller.MakeController;
+import cn.yindatx.controller.Mp3PlayController;
+import cn.yindatx.controller.MusicboxController;
 import cn.yindatx.controller.OrderController;
 import cn.yindatx.controller.PaymentController;
 
@@ -20,6 +23,9 @@ import com.jfinal.config.JFinalConfig;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
 import com.jfinal.ext.handler.ContextPathHandler;
+import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
+import com.jfinal.plugin.activerecord.dialect.MysqlDialect;
+import com.jfinal.plugin.druid.DruidPlugin;
 
 public class Config extends JFinalConfig{
 
@@ -30,6 +36,7 @@ public class Config extends JFinalConfig{
      */
 	@Override
 	public void configConstant(Constants me) {
+		loadPropertyFile("jdbc.properties");
 		if (isLocal) {
             me.setDevMode(true);
         }
@@ -53,9 +60,16 @@ public class Config extends JFinalConfig{
 	}
 
 	@Override
-	public void configPlugin(Plugins arg0) {
-		// TODO Auto-generated method stub
+	public void configPlugin(Plugins me) {
+		DruidPlugin druid = new DruidPlugin(getProperty("jdbcUrl"), getProperty("user"), getProperty("password"),getProperty("driverClass"));
+		me.add(druid);
 		
+		// 配置ActiveRecord插件
+		ActiveRecordPlugin arp = new ActiveRecordPlugin(druid);
+		arp.setDialect(new MysqlDialect());
+		
+		me.add(arp);
+		arp.addMapping("music", Music.class);	// 映射blog 表到 Blog模型
 	}
 
 	/**
@@ -68,6 +82,7 @@ public class Config extends JFinalConfig{
 		me.add("/bgmusic",BgmusicController.class).add("/answer",AnswerController.class);
 		me.add("/make",MakeController.class).add("/order",OrderController.class);
 		me.add("/payment",PaymentController.class).add("/contact",ContactController.class);
+		me.add("/musicbox",MusicboxController.class).add("/mp3play",Mp3PlayController.class);
 	}
 	
 	 private boolean isDevMode(){

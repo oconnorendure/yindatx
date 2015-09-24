@@ -75,9 +75,9 @@ img {border:0;}
 }
 .close{
 	display:block;
-	background:url(../images/close.png) no-repeat;
+	background:url(../img/close.png) no-repeat;
 	_background:none;
-	_filter:progid:DXImageTransform.Microsoft.AlphaImageloader(src="default/images/close.png",sizingMethod="images");
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageloader(src="../img/close.png",sizingMethod="images");
 	width:24px;
 	height:24px;
 	position:absolute;

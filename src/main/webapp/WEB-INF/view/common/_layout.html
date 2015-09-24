@@ -18,7 +18,8 @@
     <script type="text/javascript">
         function showRing(obj) {
             $(".aui_dialog_wrap").remove();
-            art.dialog.open("musicbox/" + $(obj).attr("iid"), { title: $(obj).attr("title"), fixed: true, skin: "aero", esc: true });
+            //+ $(obj).attr("iid")
+            art.dialog.open("musicbox" , { title: $(obj).attr("title"), fixed: true, skin: "aero", esc: true });
         }
     </script>
 <!--[if lt IE 8]>
