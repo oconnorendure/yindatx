@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -41,24 +38,22 @@ DD_belatedPNG.fix('*');
                     <div id="ringing">
 	
                         <ul>
-                            <li><span style="float: left; height: auto; display: block"><strong>铃音名称：</strong></span><span style="float: left; width: 70%; height: auto; display: block">美元素艺术美容沙龙</span><p class="clearBoth"></p>
+                            <li><span style="float: left; height: auto; display: block"><strong>铃音名称：</strong></span><span style="float: left; width: 70%; height: auto; display: block">${mp3.name}</span><p class="clearBoth"></p>
                             </li>
-                            <li><strong>行业类型：</strong>美容</li>
-                            <li><strong>所属地区：</strong>广东</li>
-                            <li><strong>声音类型：</strong>青春洋溢</li>
-                            <li><strong>制作单位：</strong>博芮欧</li>
+                            <li><strong>行业类型：</strong>${mp3.industry}</li>
+                            <li><strong>所属地区：</strong>${mp3.area}</li>
+                            <li><strong>声音类型：</strong>${mp3.style}</li>
+                            <li><strong>制作单位：</strong>音达天下</li>
                         </ul>
                     
 </div>
-                    
-                    
-                    <div class="player">
+       <div class="player">
                         <!--播放器开始-->
                         <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="99%" height="30">
-                            <param name="movie" value="mp3/1.swf?mp3=upfile/Music/20150402111514078100088.mp3&amp;autostart=1&amp;bgcolor=ffffff">
+                            <param name="movie" value="mp3/1.swf?mp3=mp3/${mp3.mp3_name}&amp;autostart=1&amp;bgcolor=ffffff">
                             <param name="quality" value="high">
                             <param value="transparent" name="wmode">
-                            <embed src="mp3/1.swf?mp3=mp3/20150209143826053100043.mp3&autostart=1&bgcolor=ffffff" width="99%" height="30" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash">
+                            <embed src="mp3/1.swf?mp3=mp3/${mp3.mp3_name}&autostart=1&bgcolor=ffffff" width="99%" height="30" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash">
                             <!--播放器结束-->
                         </object>
                     </div>
