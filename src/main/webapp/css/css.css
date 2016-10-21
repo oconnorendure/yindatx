@@ -14,7 +14,7 @@ body{ width:100%;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå",Arial, Helvetica, sans-serif;font
 .topcon{ width:1003px;height:125px;margin:0 auto; overflow:hidden; }
 .top img{ display:block;}
 .top_logo{ float:left; padding:0px 0 0 10px;}
-.top_right{ float:right; width:350px;height:125px; background:url(../img/tel.jpg) no-repeat 80% 55px; }
+.top_right{ float:right; width:350px;height:125px; /*background:url(../img/tel.jpg) no-repeat 80% 55px;*/ }
 .top_right p{ display:block; float:right; padding:12px 0 0 0;color:#8f8d8d;height:23px; line-height:23px; text-align:center; }
 .top_right p a{ color:#8f8d8d; margin:0 8px;}
 .top_right p a:hover{ color:#000; }
